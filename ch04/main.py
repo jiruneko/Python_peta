@@ -17,3 +17,14 @@ for n in range(2, 10):
             break
     else:
         print(n, 'is a prime number')
+
+def http_error(status):
+    match status:
+        case 400:
+            return "Bad request"
+        case 404:
+            return "Not found"
+        case 418:
+            return "I'm a report"
+        case _:
+            return "something's wrong with the internet"
